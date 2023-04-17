@@ -133,38 +133,4 @@ a{
     color: var(--cor-primaria);
 }
 
-/* Formulário */
-form {
-    display: flex;
-    right: 10px;
-    top: 70px;
-    justify-content:right;
-    float: right;
-    position: absolute;
-}
-  form input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    padding-left: 300px;
-  }
-  
-  form button[type="submit"] {
-    padding: 10px;
-    background-color: var(--cor-primaria);
-    border: none;
-    margin-left: 10px;
-    color: var(--cor-fundo);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  form button[type="submit"]:hover {
-    background-color: var(--cor-fundo);
-    color: var(--cor-primaria);
-  }
-  
-
-
-
 

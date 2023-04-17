@@ -1,44 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-
-  .TopoUp {
-    line-height: 20px;
-    margin: 20px;
-    background-color: var(--cor-fundo);
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--fonte-principal);
-    font-size: 20px;
-
-  }
-
-  
-  #Logo {
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    color: black;
-  }
-  #Logo:hover {
-    transform: translateY(-5px);
-  }
-  
-
- .icon {
-    margin-left: 20px;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    color: black;
-  }
-  
-  
-  .icon:hover {
-    transform: translateY(-5px);
-  }
+  margin: 0;
+  padding: 0;
+}
 
 
+.TopoUp {
+  background-color: rgb(255, 255, 255);
+  line-height: 20px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fonte-principal);
+  font-size: 20px;
+
+}
+
+
+#Logo {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'montserrat';
+}
+#Logo:hover {
+  transform: translateY(-5px);
+}
+
+
+.icon {
+  margin-left: 20px;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Formulário */
+form {
+  display: flex;
+  right: 10px;
+  top: 60px;
+  justify-content:right;
+  float: right;
+  position: absolute;
+}
+form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  padding-left: 300px;
+}
+
+form button[type="submit"] {
+  padding: 10px;
+  background-color: var(--cor-primaria);
+  border: none;
+  margin-left: 10px;
+  color: var(--cor-fundo);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+  background-color: var(--cor-fundo);
+  color: var(--cor-primaria);
+}
