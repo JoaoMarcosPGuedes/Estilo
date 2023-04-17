@@ -1,0 +1,170 @@
+:root{
+    --cor-fundo: #ffffff;
+    --cor-hover: #ffffff;
+    --cor-primaria: #000000;
+    --fonte-principal: 'Montserrat'
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Menu principal */
+.menu-principal {
+    list-style: none;
+    padding: 10px;
+    color: var(--cor-fundo);
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+}
+
+.menu-principal li {
+    display: inline;
+    position: relative;
+}
+
+.menu-principal li a {
+    display: inline-block;
+    color: var(--cor-hover);
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-principal li a:hover {
+    transform: translateY(-5px);
+    background-color:var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+/* Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 1;
+    width: 200px;
+    overflow-y: auto;
+    background-color: var(--cor-primaria);
+}
+
+.menu-principal li:hover .submenu {
+    display: block;
+    position:absolute;
+    top: 20px;
+    left: 0;
+
+}
+
+.submenu li {
+    display: block;
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+    justify-content: center;
+}
+
+/* Container para o UL e o formulário */
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+/* UL */
+.menu-principal {
+    list-style: none;
+    padding: 10px;
+    color: var(--cor-fundo);
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+}
+
+/* Li */
+.menu-principal li {
+    display: inline;
+    position: relative;
+}
+
+/* Link */
+.menu-principal li a {
+    display: inline-block;
+    color: var(--cor-hover);
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-principal li a:hover {
+    transform: translateY(-5px);
+    background-color:var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+/* Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu-principal li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    color: var(--cor-hover);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.submenu li a:hover {
+    background-color:var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+/* Formulário */
+form {
+    display: flex;
+    right: 10px;
+    top: 70px;
+    justify-content:right;
+    float: right;
+    position: absolute;
+}
+  form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    padding-left: 300px;
+  }
+  
+  form button[type="submit"] {
+    padding: 10px;
+    background-color: var(--cor-primaria);
+    border: none;
+    margin-left: 10px;
+    color: var(--cor-fundo);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+  }
+  
+
+
+
+
